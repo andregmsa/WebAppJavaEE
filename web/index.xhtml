@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>Web Noticias</title>
+    </h:head>
+    <h:body>
+        <h3>Produtor</h3>
+        <h:form>
+            <h:panelGrid columns="1" >
+                <h:commandButton value="Login Produtor" action="produtorLogin" />   
+                <h:commandButton value="Registar Produtor" action="registarProdutor" />
+            </h:panelGrid>
+        </h:form>
+        <h3>Consumidor</h3>
+        <h:form>
+            <h:panelGrid columns="1" >
+                <h:commandButton value="Login Consumidor" action="consumidorLogin" />  
+                <h:commandButton value="Registar Consumidor" action="registarConsumidor" />
+                <h:commandButton value="Consultar Ultima Noticia" action="naoRegultima" />    
+                <h:commandButton action="naoRegDatas" value="Consultar Noticias entre datas" />
+            </h:panelGrid>
+        </h:form>
+        <h3>Listas</h3>
+        <h:form>
+            <h:panelGrid columns="1" >
+                <h:commandButton value="Lista de Produtores" action="listProdutores"/>
+                <h:commandButton value="Lista de Consumidores" action="listConsumidores"/>
+            </h:panelGrid>
+        </h:form>
+    </h:body>
+</html>
+

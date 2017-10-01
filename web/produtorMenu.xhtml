@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Menu Produtor</title>
+    </h:head>
+    <h:form>
+        <h3>#{produtorController.nomeProd}</h3>
+        <p></p>
+        <h2>---Menu Produtor---</h2>
+        <p></p>
+        <h:panelGrid columns="1" >
+            <h:link value="Adicionar Tópico" outcome="addTopico.xhtml" includeViewParams="true"/>
+            <h:link value="Consultar tópicos existentes " outcome="listTopicos.xhtml" includeViewParams="true"/>
+            <h:link outcome="addNoticia.xhtml" value="Inserir notícias de um dado tópico" includeViewParams="true">
+                <f:param name="prodId" value="#{produtorController.novoProdutor.produtorId}"/>
+            </h:link> 
+            <h:link value="Consultar todas as notícias publicadas" outcome="listNoticias.xhtml" includeViewParams="true" />    
+        </h:panelGrid>
+    <h:commandButton id="back" value="Logout" action="index.xhtml" />
+    </h:form>
+</html>
+
